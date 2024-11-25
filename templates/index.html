@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% block content %}
+<h1>Welcome to My Portfolio</h1>
+<div class="row">
+    {% for project in projects %}
+    <div class="col-md-4">
+        <div class="card">
+            <img src="{{ project.image.url }}" class="card-img-top" alt="{{ project.title }}">
+            <div class="card-body">
+                <h5 class="card-title">{{ project.title }}</h5>
+                <p class="card-text">{{ project.description }}</p>
+                <a href="{{ project.link }}" class="btn btn-primary">View</a>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+{% endblock %}
