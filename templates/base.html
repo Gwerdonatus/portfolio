@@ -125,8 +125,8 @@
         <div class="container-fluid">
             <a class="navbar-brand text-white" href="#">Gwer Donatus</a>
             <div class="navbar-nav ms-auto">
-                <a class="nav-link" href="{% url "about" %}">About</a>
-                <a class="nav-link" href="{% url "contact" %}">Contact</a>
+                <a class="nav-link" href="{% url 'about' %}">About</a>
+                <a class="nav-link" href="{% url 'contact' %}">Contact</a>
             </div>
         </div>
     </nav>
@@ -173,8 +173,36 @@
         <div class="container text-center">
             <h2>My Projects</h2>
             <p>Here are some of the projects I’ve worked on:</p>
-            <div class="row">
-                <!-- Add project cards here -->
+            <div class="row gy-4">
+                <!-- ThriftbyZee Project Card -->
+                <div class="col-md-4">
+                    <div class="card p-4 h-100">
+                        <i class="fas fa-tshirt fa-3x mb-3"></i>
+                        <h5>ThriftbyZee</h5>
+                        <p>A responsive fashion e-commerce site built with Django, Bootstrap, and JavaScript.</p>
+                        <a href="https://thriftsbyzee.onrender.com" target="_blank" class="btn btn-light btn-sm">View Live Site</a>
+                    </div>
+                </div>
+
+                <!-- Items API Project Card -->
+                <div class="col-md-4">
+                    <div class="card p-4 h-100">
+                        <i class="fas fa-cloud fa-3x mb-3"></i>
+                        <h5>ThriftbyZee Items API</h5>
+                        <p>RESTful API serving product items using Django REST Framework for ThriftbyZee.</p>
+                        <a href="https://items-api-6voy.onrender.com" target="_blank" class="btn btn-light btn-sm">Explore API</a>
+                    </div>
+                </div>
+
+                <!-- Naija Co-op Hub Project Card -->
+                <div class="col-md-4">
+                    <div class="card p-4 h-100">
+                        <i class="fas fa-hand-holding-heart fa-3x mb-3"></i>
+                        <h5>Naija Co-op Hub</h5>
+                        <p>A cooperative platform with bulk deals, crowdfunding, and secure marketplace features.</p>
+                        <a href="https://github.com/Gwerdonatus/naija-coop-hub" target="_blank" class="btn btn-light btn-sm">View GitHub Repo</a>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
